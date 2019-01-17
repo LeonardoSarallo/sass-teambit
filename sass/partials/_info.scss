@@ -1,0 +1,66 @@
+.info {
+  width: 100%;
+  height: 1900px;
+  background: $background_color;
+  .container {
+    width: 65%;
+    margin: 0 auto;
+    .infotitle {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      height: 200px;
+      font-size: 20px;
+      font-family: 200;
+      margin: 0 auto;
+      text-align: center;
+
+
+    }
+    .rowimages {
+      width: 65%;
+      height: 180px;
+      margin: 0 auto;
+      .images_one, .images_two, .images_three {
+        float: left;
+        width: calc(100% / 3);
+        height: 180px;
+        text-align: center;
+        font-size: 18px;
+      }
+       .images_one img, .images_two img, .images_three img {
+          @include imgheight
+        }
+       .images_one p, .images_two p, .images_three p {
+          @include paragraph;
+        }
+
+    }
+    .rabbit {
+      width: 20%;
+      height: 300px;
+      margin: 70px auto;
+      text-align: center;
+      & img {
+        height: 300px;
+      }
+
+    }
+    .line {
+      width: 100%;
+      height: 0.5px;
+      background: #bdb5af;
+
+    }
+    .infotitledown {
+      text-align: center;
+      font-size: 20px;
+      width: 50%;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+
+  }
+
+}

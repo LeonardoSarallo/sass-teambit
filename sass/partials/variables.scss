@@ -1,0 +1,23 @@
+$color: #58402c;
+$button_color: #30488f;
+$hovercolor: #263972;
+$background_color: #ffe7d2;
+$texcolor: rgb(88, 64, 44);
+
+@mixin button {
+  cursor: pointer;
+  padding: 5px 30px;
+  color: white;
+  background: $button_color;
+  border-radius: 5px;
+  border: 1px $button_color;
+}
+
+@mixin imgheight {
+  height: 90px;
+}
+
+@mixin paragraph {
+  margin-top: 15px;
+  color: $texcolor;
+}
